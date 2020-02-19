@@ -1,0 +1,17 @@
+<h1>Новая статья</h1>
+
+<%= form_with scope: :blog do |form|%>
+<p>
+  <%= form.label :title %><br>
+  <%= form.text_field :title%>
+</p>
+
+<p>
+  <%= form.label :blog %><br>
+  <%= form.text_field :blog%>
+</p>
+<p>
+  <%= form.submit %>
+</p>
+
+<% end %>
